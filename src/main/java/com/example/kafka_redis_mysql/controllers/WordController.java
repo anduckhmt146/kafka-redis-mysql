@@ -31,12 +31,6 @@ public class WordController {
         return wordService.getAllWords();
     }
 
-    // Get all words from Redis and MySQL
-    @GetMapping("/all")
-    public List<WordDto> getAllWords() {
-        return wordService.getAllWords();
-    }
-
     // Get word by ID
     @GetMapping("/{id}")
     public WordDto getWordById(@PathVariable String id) {

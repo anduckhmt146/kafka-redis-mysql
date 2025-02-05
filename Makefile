@@ -4,7 +4,7 @@ docker-up:
 redis:
 	docker exec -it redis-container redis-cli
 
-lombok:
+clean:
 	mvn clean install
 
 dev:
